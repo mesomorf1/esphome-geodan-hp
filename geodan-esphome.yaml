@@ -6,15 +6,9 @@ substitutions:
 http_request:
   buffer_size_tx: 20248
 
-# Enable fallback hotspot (captive portal) in case wifi connection fails
-ap:
-  ssid: "Geodan ESP32"
-  password: !secret ap_password
-
 ota:
   - platform: esphome
-  - platform: http_request
-  password: !secret heatpump_ota_password
+    password: !secret heatpump_ota_password
 
 api:
   reboot_timeout: 0s
