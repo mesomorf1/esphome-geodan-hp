@@ -1,6 +1,6 @@
 substitutions:
-  name: ecodan-heatpump
-  friendlyName: Ecodan heatpump
+  name: geodan-heatpump
+  friendlyName: Geodan heatpump
 
 # enable ota update via http request
 http_request:
@@ -38,7 +38,7 @@ api:
 #  wifi: !include confs/wifi.yaml
 
 external_components:
-  - source: github://gekkekoe/esphome-ecodan-hp@main
+  - source: github://mesomorf1/esphome-geodan-hp@main
     components: [ ecodan ]
     refresh: always
 
