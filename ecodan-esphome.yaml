@@ -44,13 +44,13 @@ external_components:
 
 packages:
   remote_package:
-    url: https://github.com/gekkekoe/esphome-ecodan-hp/
+    url: https://github.com/mesomorf1/esphome-geodan-hp/
     ref: main
     refresh: always
     files: [ 
             confs/base.yaml,            # required
             confs/request-codes.yaml,   # disable if your unit does not support request codes (service menu)
-            confs/esp32s3.yaml,         # confs/esp32.yaml, for regular board
+            confs/esp32s3-waveshare-zero-proxy2.yaml,         # confs/esp32.yaml, for regular board
             #confs/esp32s3-led.yaml,    # atom s3 status leds
             confs/zone1.yaml,
             ## enable if you want to use zone 2
