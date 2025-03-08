@@ -37,12 +37,12 @@ uart:
 
   - id: uart_proxy
     rx_pin:
-      number: GPIO4
+      number: GPIO3
       mode:
         input: true
         pullup: true
     tx_pin:
-      number: GPIO3
+      number: GPIO4
       mode:
         output: true
     baud_rate: 9600
