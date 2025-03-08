@@ -16,12 +16,12 @@ esp32:
 uart:
   - id: uart_ecodan
     rx_pin:
-      number: GPIO10
+      number: GPIO05
       mode:
         input: true
         pullup: true
     tx_pin:
-      number: GPIO09
+      number: GPIO06
       mode:
         output: true
     baud_rate: 2400
@@ -37,12 +37,12 @@ uart:
 
   - id: uart_proxy
     rx_pin:
-      number: GPIO8
+      number: GPIO3
       mode:
         input: true
         pullup: true
     tx_pin:
-      number: GPIO7
+      number: GPIO4
       mode:
         output: true
     baud_rate: 9600
